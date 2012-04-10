@@ -7,11 +7,14 @@ for five times
 * Go to localhost:8080 to launch 10 simulators
 
 == Notes
-* added in standalone-ha.xml HornetQ window size as here: https://gist.github.com/1576e497fe7c673b0fba
-* I start server like this: $JBOSS_HOME/bin/standalone.sh --server-config=standalone-ha.xml
-* I deploy like this: 
-	*  jruby -S bundle exec rake assets:precompile (*note:* precompiled assets are committed)
-	* RAILS_ENV=production jruby -S bundle exec rake torquebox:deploy 
+I  added in standalone-ha.xml HornetQ window size as here: https://gist.github.com/1576e497fe7c673b0fba
+
+I start server like this: 
+* $JBOSS_HOME/bin/standalone.sh --server-config=standalone-ha.xml
+
+I deploy like this: 
+*  jruby -S bundle exec rake assets:precompile (*note:* precompiled assets are committed)
+* RAILS_ENV=production jruby -S bundle exec rake torquebox:deploy 
 
 The first time I launch the simulators on a clean deploy, i.e:
 
