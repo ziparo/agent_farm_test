@@ -17,6 +17,8 @@ The first time I launch the simulators on a clean deploy, i.e:
 * rm -rf ~/torquebox-current/jboss/standalone/tmp/*
 * rm -rf ~/torquebox-current/jboss/standalone/data/*
 
-I get the expected behavior (see server.log). The second time, I get only two at the time. 
+I get the expected behavior (see server.log). The second time I launch them, after the first 
+ten have finished, (i.e. I go again on
+localhost:3000), I get only two at the time. 
 The behavior is deterministic.
 
